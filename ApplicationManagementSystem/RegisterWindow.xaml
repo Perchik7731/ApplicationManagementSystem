@@ -1,0 +1,23 @@
+﻿<Window x:Class="ApplicationManagementSystem.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApplicationManagementSystem"
+        mc:Ignorable="d"
+        Title="RegisterWindow" Height="400" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBox x:Name="UsernameTextBox" Text="Username" Margin="0,0,0,10"/>
+            <TextBox x:Name="PasswordBox" Text="Password" Margin="0,0,0,10"/>
+            <ComboBox x:Name="RoleComboBox" Margin="0,0,0,10">
+                <ComboBoxItem Content="Администратор"/>
+                <ComboBoxItem Content="Редактор"/>
+                <ComboBoxItem Content="Абитурент"/>
+            </ComboBox>
+            <Button Content="Регистрация" Click="RegisterButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
